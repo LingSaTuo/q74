@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Recommended"
+          android:id="@+id/recommended"
+          android:icon="@mipmap/mov"/>
+    <item android:title="found"
+          android:id="@+id/found"
+          android:icon="@mipmap/found"/>
+    <item android:title="community"
+          android:id="@+id/community"
+          android:icon="@mipmap/community"/>
+    <item android:title="my"
+          android:id="@+id/my"
+          android:icon="@mipmap/my"/>
+</menu>

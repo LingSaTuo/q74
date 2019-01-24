@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/background_main"
+        android:layout_height="wrap_content">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbar">
+
+        <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="MY"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbar"
+            android:fillViewport="true"
+            android:layout_height="0dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="24dp"
+                android:layout_height="match_parent">
+            <include layout="@layout/my_userlayout"/>
+
+            <com.celivad.widget.MMenuItem
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="24dp"
+                    app:icon="@mipmap/list"
+                    app:tint="@color/colorAccent"
+                    app:title="历史"
+                    android:id="@+id/history"
+                    android:layout_height="wrap_content"/>
+            <com.celivad.widget.MMenuItem
+                    android:layout_width="match_parent"
+                    app:icon="@mipmap/love"
+                    app:tint="@color/colorAccent"
+                    android:id="@+id/love"
+                    app:title="喜欢"
+                    android:layout_height="wrap_content"/>
+            <com.celivad.widget.MMenuItem
+                    android:layout_width="match_parent"
+                    app:icon="@mipmap/subscription"
+                    app:tint="@color/colorAccent"
+                    app:title="订阅"
+                    android:layout_height="wrap_content"/>
+            <com.celivad.widget.MMenuItem
+                    android:layout_width="match_parent"
+                    app:icon="@mipmap/assistant"
+                    app:tint="@color/colorAccent"
+                    app:title="信息"
+                    android:layout_height="wrap_content"/>
+
+            <com.celivad.widget.MMenuItem
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="24dp"
+                    app:icon="@mipmap/setting"
+                    app:tint="@color/colorAccent"
+                    app:title="设置"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

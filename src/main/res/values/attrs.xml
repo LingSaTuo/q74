@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="icon" format="reference"/>
+    <attr name="title" format="string"/>
+    <attr name="tint" format="color"/>
+    <declare-styleable name="MenuTabItem">
+        <attr name="icon"/>
+        <attr name="title"/>
+        <attr name="tint"/>
+    </declare-styleable>
+    <declare-styleable name="MMenuItem">
+        <attr name="icon"/>
+        <attr name="title"/>
+        <attr name="tint"/>
+    </declare-styleable>
+    <declare-styleable name="EditTextInput">
+        <attr name="icon"/>
+        <attr name="tint"/>
+        <attr name="hint"/>
+        <attr name="android:inputType"/>
+    </declare-styleable>
+
+</resources>

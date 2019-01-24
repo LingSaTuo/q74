@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/icon"
+            android:layout_height="300dp"/>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp">
+
+        <android.support.constraint.ConstraintLayout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+            <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/icon_"
+                    android:layout_height="300dp"/>
+            <View
+                    android:layout_width="match_parent"
+                    app:layout_constraintBottom_toBottomOf="@id/icon_"
+                    android:background="@drawable/found_bottm"
+                    android:id="@+id/movie_"
+                    android:layout_height="120dp"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:background="@color/background_main"
+                    app:layout_constraintTop_toBottomOf="@id/movie_"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="0dp"/>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/icon_"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:text="DOCTOR STRANGE"
+                    android:layout_margin="16dp"
+                    android:id="@+id/title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textColor="@color/subTitle"
+                    android:id="@+id/action"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:text="Action·Fantasy·Adventure"
+
+                    android:layout_margin="16dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/action"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textColor="@color/subTitle"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:id="@+id/time"
+                    android:text="26 Nov · 2016"
+                    android:layout_marginStart="16dp"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:layout_width="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/action"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/collection"
+                    android:id="@+id/collection"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:tint="@android:color/white"
+                    android:layout_height="20dp"/>
+
+            <ImageView
+                    android:layout_width="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/action"
+                    app:layout_constraintEnd_toStartOf="@id/collection"
+                    android:layout_margin="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/report"
+                    android:id="@+id/report"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:tint="@android:color/white"
+                    android:layout_height="20dp"/>
+
+            <ImageView
+                    android:layout_width="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/action"
+                    app:layout_constraintEnd_toStartOf="@id/report"
+                    android:layout_margin="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/love"
+                    android:id="@+id/love"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:tint="@android:color/white"
+                    android:layout_height="20dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/love"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_margin="24dp"
+                    android:text="INTRODUCTION"
+                    android:id="@+id/intoduction"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/intoduction"
+                    android:layout_margin="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/intoductions"
+                    android:textSize="16sp"
+                    android:text="      An old woman had a cat. The cat was very old; she could not run quickly, and she could not bite, because she was so old. One day the old cat saw a mouse; she jumped and caught the mouse. But she could not bite it; so the mouse got out of her mouth and ran away, because the cat could not bite it. "
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:text="PLAY"
+                    app:layout_constraintTop_toBottomOf="@id/intoductions"
+                    android:layout_margin="24dp"
+                    android:id="@+id/play_"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@id/play_"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/players"
+                    android:layout_height="80dp"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/icon"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="12dp"
+            app:fabSize="normal"
+            android:id="@+id/fab"
+            app:backgroundTint="@color/subTitle"
+            android:src="@mipmap/check"
+            android:clickable="true"
+            android:focusable="true"
+            android:tint="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbar"
+            app:elevation="0dp"
+            android:background="@android:color/transparent">
+
+        <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                    android:layout_width="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="14dp"
+                    android:src="@mipmap/back"
+                    android:tint="@android:color/white"
+                    android:padding="8dp"
+                    android:scaleType="centerInside"
+                    android:layout_height="40dp"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="false"
+        android:background="@color/background_main"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/quote_rv"
+            android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp"
+            android:id="@+id/appbar">
+
+        <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                    android:layout_width="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="14dp"
+                    android:src="@mipmap/back"
+                    android:tint="@android:color/white"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    android:scaleType="centerInside"
+                    android:layout_height="40dp"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+</android.support.constraint.ConstraintLayout>
